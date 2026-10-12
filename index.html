@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Uma parte da nossa história</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <section id="login" class="tela login">
+            <div class="login-conteudo">
+                <span class="detalhe">um pequeno lugar no tempo</span>
+
+                <h1>Algumas histórias<br>merecem ser guardadas.</h1>
+
+                <p>para entrar, coloque a data que a gente se resolveu.</p>
+
+                <form id="form-login">
+
+                    <input type="text" id="senha" placeholder="DD/MM/AAAA" maxlength="10" inputmode="numeric"
+                        autocomplete="off" required>
+
+
+                    <button type="submit">Entrar na lembrança</button>
+
+                    <p id="erro" aria-live="polite"></p>
+                </form>
+
+                <span class="rodape-login">feito com carinho</span>
+            </div>
+        </section>
+
+        <section id="inicio" class="tela escondida">
+            <div class="conteudo">
+                <span class="detalhe">capítulo especial</span>
+
+                <h1>O que foi verdadeiro<br>merece ser lembrado.</h1>
+
+                <p class="introducao">
+                    Entre tantos dias comuns, existiram momentos
+                    que se tornaram especiais simplesmente porque
+                    aconteceram.
+                </p>
+
+                <img src="yumi-fotos/1.jpeg" alt="Uma lembrança especial" class="foto-destaque">
+
+                <p class="legenda">
+                    Algumas lembranças continuam tendo seu próprio lugar.
+                </p>
+
+                <button class="botao-secundario" data-ir="album">
+                    Relembrar nossa história →
+                </button>
+            </div>
+        </section>
+
+        <section id="album" class="tela escondida">
+            <div class="conteudo">
+                <span class="detalhe">fragmentos de nós</span>
+
+                <h1>Pequenos momentos,<br>grandes significados.</h1>
+
+                <p class="introducao">
+                    Nem tudo que marcou a gente aconteceu em grandes ocasiões.
+                    Às vezes, foram os detalhes que fizeram tudo ser especial.
+                </p>
+
+                <div class="galeria">
+                    <article class="memoria">
+                        <img src="yumi-fotos/5.jpeg" alt="Uma lembrança nossa">
+                        <div>
+                            <span>01 · Leveza</span>
+                            <p>Os momentos em que bastava estar junto.</p>
+                        </div>
+                    </article>
+
+                    <article class="memoria">
+                        <img src="yumi-fotos/4.jpeg" alt="Um momento especial">
+                        <div>
+                            <span>02 · Sorrisos</span>
+                            <p>As pequenas coisas que viravam motivos para sorrir.</p>
+                        </div>
+                    </article>
+
+                    <article class="memoria">
+                        <img src="yumi-fotos/10.jpeg" alt="Uma lembrança feliz">
+                        <div>
+                            <span>03 · Presença</span>
+                            <p>Os dias em que uma companhia fazia diferença.</p>
+                        </div>
+                    </article>
+
+                    <article class="memoria">
+                        <img src="yumi-fotos/6.jpeg" alt="Uma recordação">
+                        <div>
+                            <span>04 · Saudade</span>
+                            <p>O valor que certas lembranças ganham com o tempo.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="nota-album">
+                    E essas são apenas algumas das lembranças.
+                </p>
+
+                <button class="botao-secundario" data-ir="carta">
+                    Uma última coisa →
+                </button>
+            </div>
+        </section>
+
+        <section id="carta" class="tela escondida">
+            <div class="conteudo">
+                <span class="detalhe">com carinho</span>
+
+                <div class="papel">
+                    <p class="saudacao">Yumi,</p>
+
+                    <p>
+                        Quando olho para tudo o que vivemos, percebo
+                        que uma história não é feita apenas dos dias
+                        perfeitos, mas também daquilo que aprendemos
+                        com cada experiência.
+                    </p>
+
+                    <p>
+                        Guardo com carinho os momentos em que sorrimos,
+                        as conversas, as brincadeiras e os detalhes que,
+                        na hora, pareciam tão simples.
+                    </p>
+
+                    <p>
+                        Também entendo que gostar de alguém envolve
+                        aprender, reconhecer os próprios erros e crescer.
+                        Nem sempre a gente sabe fazer tudo da melhor forma,
+                        mas isso não tira o valor do que foi vivido nem
+                        a importância de se tornar alguém melhor.
+                    </p>
+
+                    <p>
+                        Não escrevo isso para cobrar nada do futuro.
+                        Só queria que essa parte da nossa história
+                        tivesse um lugar bonito para existir, com tudo
+                        o que significou e com o carinho que merece.
+                    </p>
+
+                    <p>
+                        Independentemente dos caminhos que a vida
+                        apresentar, espero que você encontre motivos
+                        para sorrir, paz nos dias difíceis e pessoas
+                        que cuidem bem do seu coração.
+                    </p>
+
+
+                    <p>
+                        e nunca se esqueça disso, você é e sempre será,
+                        <span class="destaque-paz">a minha paz ❤️‍🩹</span>
+                    </p>
+
+
+                    <p class="assinatura">
+                        Com carinho,<br>
+                        Vilares.
+                    </p>
+                </div>
+
+                <button class="botao-secundario" data-ir="final">
+                    Continuar →
+                </button>
+            </div>
+        </section>
+
+        <section id="final" class="tela escondida">
+            <div class="conteudo encerramento">
+                <span class="detalhe">e, por enquanto, é isso</span>
+
+                <h1>Nem tudo precisa<br>ser eterno para<br>ser inesquecível.</h1>
+
+                <p>
+                    Algumas histórias deixam marcas bonitas
+                    simplesmente por terem acontecido.
+                </p>
+
+                <span class="assinatura-final">Vilares ♡</span>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

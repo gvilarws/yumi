@@ -1,0 +1,294 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --fundo: #E0D2BF;
+    --papel: #F0E4D3;
+    --texto: #493D35;
+    --detalhe: #A18469;
+    --borda: #CCB79D;
+}
+
+
+
+body {
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+}
+
+.tela {
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 60px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.escondida {
+    display: none;
+}
+
+.login {
+    text-align: center;
+}
+
+.login-conteudo,
+.conteudo {
+    width: 100%;
+    max-width: 760px;
+    margin: auto;
+    text-align: center;
+}
+
+.detalhe {
+    display: block;
+    color: var(--detalhe);
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(34px, 6vw, 55px);
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.login-conteudo > p {
+    margin-bottom: 30px;
+}
+
+#form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+#senha {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    border: 1px solid var(--borda);
+    border-radius: 2px;
+    background: var(--papel);
+    color: var(--texto);
+    text-align: center;
+    font: inherit;
+    letter-spacing: 2px;
+    outline: none;
+}
+
+#senha:focus {
+    border-color: var(--detalhe);
+}
+
+button {
+    cursor: pointer;
+    font: inherit;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#form-login button {
+    padding: 14px 24px;
+    border: 1px solid var(--texto);
+    background: var(--texto);
+    color: var(--papel);
+}
+
+#form-login button:hover {
+    background: #675548;
+}
+
+#erro {
+    color: #9b5148;
+    font-size: 13px;
+}
+
+.rodape-login {
+    display: block;
+    margin-top: 60px;
+    color: var(--detalhe);
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.introducao {
+    max-width: 540px;
+    margin: 0 auto 35px;
+}
+
+.foto-destaque {
+    display: block;
+    width: 100%;
+    max-width: 410px;
+    max-height: 520px;
+    object-fit: cover;
+    margin: 0 auto 18px;
+    padding: 9px;
+    background: var(--papel);
+    box-shadow: 0 10px 30px #493d3512;
+}
+
+.legenda {
+    margin-bottom: 30px;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    color: var(--detalhe);
+}
+
+.botao-secundario {
+    margin-top: 35px;
+    padding: 13px 23px;
+    border: 1px solid var(--borda);
+    background: transparent;
+    color: var(--texto);
+}
+
+.botao-secundario:hover {
+    background: var(--papel);
+    transform: translateY(-2px);
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.memoria {
+    background: var(--papel);
+    padding: 10px;
+    box-shadow: 0 5px 20px #493d350b;
+}
+
+.memoria img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.memoria div {
+    padding: 4px 5px 12px;
+}
+
+.memoria span {
+    color: var(--detalhe);
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.memoria p {
+    margin-top: 8px;
+    font-family: "Playfair Display", serif;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.nota-album {
+    margin-top: 30px;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+}
+
+.papel {
+    padding: clamp(25px, 6vw, 55px);
+    background:
+        linear-gradient(#fffaf1e8, #fffaf1e8),
+        repeating-linear-gradient(
+            transparent 0px,
+            transparent 31px,
+            #dfd0bd 32px
+        );
+    border: 1px solid var(--borda);
+    box-shadow: 0 10px 35px #493d350d;
+    text-align: left;
+}
+
+.papel p {
+    margin-bottom: 22px;
+}
+
+.papel .saudacao,
+.assinatura {
+    font-family: "Playfair Display", serif;
+    font-size: 23px;
+}
+
+.papel .assinatura {
+    margin-top: 35px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+.encerramento > p {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.assinatura-final {
+    display: block;
+    margin-top: 55px;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-style: italic;
+    color: var(--detalhe);
+}
+
+@media (max-width: 520px) {
+    .tela {
+        padding: 45px 20px;
+    }
+
+    .detalhe {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .memoria img {
+        aspect-ratio: 4 / 4.5;
+    }
+
+    .papel {
+        padding: 25px 22px;
+    }
+}
+
+.destaque-paz {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: 600;
+    color: #d14444;
+    white-space: nowrap;
+}
